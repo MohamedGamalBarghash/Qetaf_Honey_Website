@@ -1,0 +1,516 @@
+/* removing the margins from the site's default options */
+body {
+  margin: 0vw;
+}
+/* removing the annoying blue border around each input of type button */
+input:focus {
+  outline: 0vw;
+}
+/* removing the annoying blue border around each button */
+button:focus {
+  outline: 0vw;
+}
+
+/* setting the properties of the header area at the top of the page */
+#header {
+  background-color: rgb(50,50,50);
+  height: 4vw;
+  width: 100%;
+  z-index: 1;
+  display: block;
+  position: fixed;
+}
+
+/* setting the properties of the items in the header */
+.header-item {
+  display: inline-block;
+  margin: 0.5vw 1vw 1vw 22vw;
+  height: 3vw;
+  float: right;
+  cursor: pointer;
+}
+/* setting the properties of the texts in the header */
+.header-item p {
+  display: inline-block;
+  margin: 0px;
+  padding-top: 0.3vw;
+  font-family: "Segoe UI";
+  font-weight: bold;
+  font-size: 1.5vw;
+  color: #FED158;
+  transition: all 0.2s ease-in;
+}
+/* adding a color change on hover to the texts in the header of the page */
+.header-item p:hover {
+  color: #fff;
+}
+
+/* setting up the area for the cards to show the NEW ARRIVALS */
+#products {
+  display: inline-block;
+  width: 70vw;
+}
+
+/* setting the properties for the card holder */
+.card {
+  display: inline-block;
+  float: right;
+  margin: 1vw 1vw 1vw 1vw;
+  width: 20vw;
+  height: 27vw;
+}
+/* setting the properties of the image for the product the in the card */
+.product-img {
+  height: 20vw;
+  width: 18vw;
+  margin: 1vw;
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow: auto;
+}
+/* setting the quick view thing that appears when you hover over a product */
+.quick-view {
+  overflow: hidden;
+  position: relative;
+  margin-top: 20vw;
+  height: 0vw;
+  width: 100%;
+  background-color: rgba(140,140,140,50%);
+  text-align: center;
+  transition: all 200ms ease;
+}
+/* setting what happens when you hover over a product image */
+.product-img:hover > .quick-view {
+  margin-top: 17vw;
+  height: 3vw;
+}
+/* setting the properties of the label on the quick view thing that pops up when you hover over a product image */
+.quick-view-label {
+  font-family: "Segoe UI";
+  font-size: 1vw;
+  font-weight: bold;
+}
+/* setting the properties of the area that holds the product name in the card */
+.product-name {
+  text-align: center;
+  padding-bottom: 0.5vw;
+}
+/* setting the properties of the name for the product in the card */
+.product-name p {
+  margin-bottom: 0px;
+  font-family: arial;
+  font-size: 2vw;
+  font-weight: bold;
+  font-family: "Segoe UI";
+  color: rgb(0,0,0);
+}
+/* setting the properties for the area that holds the product price in the card */
+.product-price {
+  text-align: center;
+}
+/* setting the properties for the product price in the card */
+.product-price p {
+  margin: 0px;
+  font-family: arial;
+  font-size: 1.5vw;
+  color: rgb(150,150,150);
+}
+
+/* setting the properties of the are where I choose the filters of the products */
+#filter-area {
+  display: inline-block;
+  float: right;
+  width: 25vw;
+  height: 40vw;
+  text-align: center;
+  align-items: center;
+}
+
+/* setting the properties for the headings of the filter options that describes them */
+.headings {
+  display: block;
+  margin: 1vw 0vw 1vw 0vw;
+  font-family: "Segoe UI";
+  font-weight: bold;
+  font-size: 3vw;
+}
+/* setting the properties of an area around the choices you can filter from to align them to the right direction */
+.check-boxes-area {
+  text-align: right;
+  margin-right: 10vw;
+}
+.check-box {
+  width: 1vw;
+  height: 1vw;
+}
+
+/* setting the separation line properties */
+#line {
+  width: 21vw;
+  margin: 0vw 2vw 0vw 2vw;
+  height: 0.1vw;
+  background-color: rgb(112, 112, 112, 50%);
+  border-radius: 1000px;
+}
+
+/* setting the properties of the filter labels */
+.labels {
+    font-size: 1.5vw;
+    font-family: "Segoe UI";
+}
+/* setting up the dark area around the quick view windows when opened, which if someone clicked it will close the quick view windows */
+.dark-area {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0vw;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 0;
+  display: none;
+}
+/* setting up the quick view window */
+.quick-view-window {
+  width: 70vw;
+  position: fixed;
+  text-align: right;
+  top: 5.5vw;
+  left: 15vw;
+  background-color: white;
+  display: none;
+  z-index: 1;
+}
+/* setting the properties for the product image in the quick view window */
+.product-image-quick-view {
+  display: inline-block;
+  float: right;
+  width: 25vw;
+  height: 25vw;
+  border-left: 1px solid grey;
+  margin-right: 1vw;
+}
+/* setting the properties of the product name in the quick view window */
+.product-name-quick-view {
+  display: inline-block;
+  font-family: "Segoe UI";
+  font-size: 3vw;
+  font-weight: bold;
+  margin: 0vw 2vw 0vw 0vw;
+}
+/* setting up the properties for the discription of the product */
+.product-discription {
+  display: inline-block;
+  width: 38vw;
+  font-size: 2vw;
+  margin-right: 2vw;
+  font-family: "Segoe UI";
+}
+/* setting the properties for the product price in the quick view window */
+.product-price-quick-view {
+  display: inline-block;
+  font-size: 2vw;
+  width: 38vw;
+  font-family: "Segoe UI";
+  font-weight: bold;
+  color: #828282;
+  margin: 0vw 2vw 0vw 0vw;
+}
+/* setting the properties of the input number thing which indicates the quantity of the product */
+.quantity {
+  width: 5vw;
+  height: 3vw;
+  float: left;
+  margin: 3vw 0vw 0vw 3vw;
+  display: inline-block;
+  font-size: 2vw;
+}
+/* setting the properties for the add to the cart button in the quick view button */
+.add-to-the-cart {
+  border-radius: 1000px;
+  border: 1px solid #cb7300;
+  padding: 0px;
+  width: 15vw;
+  height: 3vw;
+  background-color: #FED158;
+  font-family: "Segoe UI";
+  font-weight: bold;
+  font-size: 1.3vw;
+  color: white;
+  transition: all 200ms ease;
+  float:left;
+  display: block;
+  margin: 1vw 50vw 1vw 2vw;
+  /* position: absolute;
+  bottom: 1vw;
+  left: 1vw; */
+}
+/* setting the thing to do when hover over the add to the cart button */
+.add-to-the-cart:hover {
+  background-color: #e2b02b;
+}
+
+/* setting the properties for the circly cart icon to the bottom right of the page */
+#cart-icon {
+  position: fixed;
+  bottom: 2vw;
+  right: 2vw;
+  width: 5vw;
+  height: 5vw;
+  background-color: #ffbd02;
+  border-radius: 50%;
+  text-align: center;
+  z-index: 2;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+/* setting the properties of the image of the shopping cart */
+#cart-icon img {
+  height: 3vw;
+  width: 3vw;
+  margin: 1vw;
+  transition: all 200ms ease;
+}
+/* setting what happens when the user hovers over the shopping cart icon */
+#cart-icon:hover > img {
+  height: 2.5vw;
+  width: 2.5vw;
+  margin: 1.25vw;
+}
+/* setting the area that hold the stored objects */
+#cart-items {
+  width: 32vw;
+  display:none;
+  /* height: 20vw; */
+  padding-bottom: 5vw;
+  background-color: #ffbd02;
+  position: fixed;
+  bottom: 2vw;
+  right: 2vw;
+  float: right;
+  z-index: 1;
+  border-radius: 2vw;
+}
+
+/* setting the properties for the sum label */
+#sum-label {
+  font-family: "Segoe UI";
+  font-size: 1.8vw;
+  font-weight: bold;
+  position: absolute;
+  text-align: right;
+  display: inline-block;
+  right: 6vw;
+  bottom: 1.5vw;
+  margin: 0vw;
+}
+/* setting the properties for the full price label */
+#sum {
+  font-family: "Segoe UI";
+  font-size: 1.7vw;
+  font-weight: bold;
+  position: absolute;
+  text-align: right;
+  display: inline-block;
+  right: 13vw;
+  bottom: 1.4vw;
+  margin: 0vw;
+}
+/* setting the properties for the buy now button */
+#buy-now {
+  width: 10vw;
+  height: 2.5vw;
+  font-family: "Segoe UI";
+  font-size: 1.8vw;
+  font-weight: bold;
+  position: absolute;
+  text-align: right;
+  display: inline-block;
+  padding-right: 1vw;
+  border-right: 2px solid black;
+  right: 22vw;
+  bottom: 1.4vw;
+  margin: 0vw;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+/* setting what happens when you hover over the buy noe button */
+#buy-now:hover {
+  /* font-size: 1.4vw; */
+  padding-right: 1.5vw;
+  color: rgb(70,70,70);
+}
+
+/* setting the properties of the item holder area */
+.item-holder {
+  /* margin-top: 0.5vw; */
+  width: 32vw;
+  height: 3.5vw;
+  /* background-color: #ffbd02; */
+  /* border-top: 0.1vw solid #adabab66; */
+  border-bottom: 0.1vw solid #adabab66;
+  transition: all 200ms ease;
+}
+/* setting the properties of the quantity of item */
+.item-quantity {
+  width: 2.5vw;
+  margin: 0.75vw 0vw 0.75vw 0vw;
+  display: inline-block;
+  float: right;
+  font-size: 1.5vw;
+  font-family: "Segoe UI";
+  font-weight: bold;
+}
+/* setting the properties of the item name */
+.item-label-holder {
+  font-size: 1.5vw;
+  font-family: "segoe UI";
+  font-weight: bold;
+  color: black;
+  float: right;
+  margin: 0.75vw 1vw 1.25vw 0vw;
+  text-align: right;
+}
+/* setting the properties of the delete item button */
+.item-delete-button {
+  display: inline-block;
+  width: 2.5vw;
+  height: 2.5vw;
+  margin: 0.5vw;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+.item-delete-button:hover {
+  width: 2vw;
+  height: 2vw;
+  margin: 0.75vw;
+  cursor: pointer;
+}
+
+/* setting up the options for the sing up window */
+#sign-up-window {
+  width: 70vw;
+  height: 75vh;
+  position: fixed;
+  text-align: right;
+  top: 15vh;
+  left: 15vw;
+  background-color: white;
+  display: none;
+  z-index: 1;
+  border-radius: 5vw;
+}
+/* setting the properties fot he sign up button in the sign up window */
+#sign-up-button {
+  border-radius: 2vw;
+  background-color: #ffda00;
+  color: black;
+  width: 25vw;
+  height: 4vw;
+  font-family: "Segoe UI";
+  font-size: 2.5vw;
+  font-weight: bold;
+  border: 0vw;
+  margin: 2vw 22.5vw 2vw 22.5vw;
+  transition: all 200ms ease;
+}
+#sign-up-button:hover {
+  background-color: #ffcf00;
+  font-size: 2.4vw;
+}
+#sign-up-button:active {
+  width: 23vw;
+  margin: 2vw 23.5vw 2vw 23.5vw;
+}
+#phone::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  -moz-appearance:textfield;
+}
+
+/* setting the properties for the input fields in the sign up window */
+.field {
+  width: 45vw;
+  height: 3vw;
+  border-radius: 2vw;
+  border: 0.2vw solid #FED158;
+  float: right;
+  margin: 1vw 0vw 1vw 0vw;
+  padding: 0vw 2vw 0vw 2vw;
+  font-family: "Segoe UI";
+  font-size: 1.5vw;
+  text-align: right;
+}
+/* setting hte options for the headers in the sign up window */
+.sign-up-header {
+  font-family: "Segoe UI";
+  font-size: 3vw;
+  font-weight: bold;
+  text-align: center;
+}
+/* setting the properties for the labels beside the field inputs in the sign up window */
+.sign-up-label {
+  font-weight: bold;
+  font-size: 2vw;
+  width: 10vw;
+  font-family: "Segoe UI";
+  display: inline-block;
+  float: right;
+  margin: 1vw 3vw 1vw 3vw;
+}
+
+/* setting the properties for the thank you windows after a person signs up */
+#thank-you-window {
+  position: fixed;
+  background-color: #FED158;
+  top: 40vh;
+  left: 30vw;
+  width: 40vw;
+  height: 6vw;
+  text-align: center;
+  font-size: 2vw;
+  font-family: "Segoe UI";
+  font-weight: bold;
+  border-radius: 5vw;
+  display: none;
+}
+#thank-you-window p {
+  width: 40vw;
+  height: 3vw;
+  margin: 1.5vw 0vw 1.5vw 0vw;
+}
+
+/* setting the properties of the footer area at the bottom of the page */
+#footer-area {
+  height: 10vw;
+  background-color: #FED158;
+  display: block;
+}
+
+/* setting the properties of the footer headers */
+.footer-heading {
+  margin: 2vw 0vw 0vw 0vw;
+  color: #805D01;
+  font-family: "Segoe UI";
+  font-weight: bold;
+  font-size: 2vw;
+}
+/* setting the properties of the footer paragraphs */
+.footer-info {
+  font-family: arial;
+  font-size: 1vw;
+  width: 20vw;
+  height: 1.5vw;
+  font-weight: bold;
+  margin: 0.5vw 0vw 0vw 0vw;
+  color: rgb(148, 108, 0, 58%);
+  background-color: rgb(0, 0, 0, 0%);
+  transition: all 0.2s ease-in;
+}
+/* setting the properties of language paragraphs at the footer of the page */
+.hover:hover {
+  cursor: pointer;
+  color: rgb(148, 108, 0, 100%);
+}
+/* setting the properties of the footer contact info paragraphs */
+.space {
+  margin: 0vw;
+}

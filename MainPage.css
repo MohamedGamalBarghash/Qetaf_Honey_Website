@@ -1,0 +1,241 @@
+/* removing the margins from the site's default options */
+body {
+  margin: 0px;
+}
+/* removing the blue annoying borders from the buttons of the whole page as a default option */
+button:focus {
+  outline: 0px;
+}
+
+/* setting the properties of the header area at the top of the page */
+#header {
+  background-color: rgb(50,50,50);
+  height: 4vw;
+  width: 100%;
+  z-index: 1;
+  display: block;
+  position: fixed;
+}
+
+/* setting the properties of the items in the header */
+.header-item {
+  display: inline-block;
+  margin: 0.5vw 1vw 1vw 22vw;
+  height: 3vw;
+  float: right;
+  cursor: pointer;
+}
+/* setting the properties of the texts in the header */
+.header-item p {
+  display: inline-block;
+  margin: 0px;
+  padding-top: 0.3vw;
+  font-family: "Segoe UI";
+  font-weight: bold;
+  font-size: 1.5vw;
+  color: #FED158;
+  transition: all 0.2s ease-in;
+}
+/* adding a color change on hover to the texts in the header of the page */
+.header-item p:hover {
+  color: #fff;
+}
+
+/* setting the properties of the background behind the big QETAF word */
+#beehive-bg {
+  background: url("pics/beehiveblur.jpg") no-repeat;
+  background-size: 100%;
+  text-align: center;
+  height: 30vw;
+
+}
+/* setting the properties of the big QETAF word */
+#Qetaf-word {
+  display: inline-block;
+  height: 10vw;
+  margin: 9vw 30vw 0vw 30vw;
+}
+/* setting the properties of the big NATURAL HONEY word */
+#HONEYFORSALE-word {
+  font-family: "Segoe UI";
+  font-weight: bold;
+  font-size: 4vw;
+  padding: 0vw 10vw 0vw 10vw;
+  margin: 0px;
+  display: inline-block;
+  text-align: center;
+  color: #fff;
+  text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000; /* #CB7300 */
+}
+
+/* setting the properties of the yellow area around the NEW ARRIVALS word */
+.header-t-one {
+  width: 15vw;
+  height: 3vw;
+  margin: 0vw 42.5vw 0vw 42.5vw;
+  text-align: center;
+  /*padding-top: 3vw;*/
+  padding-bottom: 0.7vw;
+  background-color: #FED158;
+}
+/* setting the properties of the NEW ARRIVALS word */
+.header-t-one p {
+  display: inline-block;
+  margin: 0vw 0vw 0vw 0vw;
+  font-family: "Segoe UI";
+  font-weight: bold;
+  font-size: 2.5vw;
+  color: rgb(70,70,70);
+}
+
+/* setting up the area for the cards to show the NEW ARRIVALS */
+#products {
+  height: 30vw;
+  width: 100%;
+  margin: 0vw 0vw 0vw 0vw;
+}
+
+/* setting the properties for the card holder */
+.card {
+  display: inline-block;
+  margin: 1vw 2.125vw 1vw 2.125vw;
+  width: 20vw;
+  height: 30vw;
+}
+/* setting the properties of the image for the product the in the card */
+.product-img {
+  height: 20vw;
+  width: 18vw;
+  margin: 1vw;
+}
+/* setting the properties of the area that holds the product name in the card */
+.product-name {
+  text-align: center;
+  padding-bottom: 0.5vw;
+}
+/* setting the properties of the name for the product in the card */
+.product-name p {
+  margin-bottom: 0px;
+  font-family: arial;
+  font-size: 2vw;
+  font-weight: bold;
+  font-family: "Segoe UI";
+  color: rgb(0,0,0);
+}
+/* setting the properties for the area that holds the product price in the card */
+.product-price {
+  text-align: center;
+}
+/* setting the properties for the product price in the card */
+.product-price p {
+  margin: 0px;
+  font-family: arial;
+  font-size: 1.1vw;
+  color: rgb(150,150,150);
+}
+/* setting the properties for the area around the Load More button */
+.load-more {
+  display: block;
+  height: auto;
+  text-align: center;
+  padding-bottom: 2vw;
+}
+/* setting the properties for the Load More button itself */
+.load-more button {
+  border: 0vw;
+  margin: 0px;
+  background-color: #FED158;
+  color: rgb(70,70,70);
+  width: 14vw;
+  height: 4vw;
+  font-family: "Segoe UI";
+  font-size: 2vw;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+/* adding a little animation to the LOAD MORE button */
+.load-more button:hover {
+  font-size: 1.8vw;
+  color: #000;
+  width: 12vw;
+}
+
+/* setting the properties of the benefits area specifically the some kind of yellow in the background */
+#benefits-area {
+  text-align: center;
+  background-color: #FED158;
+}
+/* setting the properties of the benefits area specifically the white area where the benefits actually are */
+#benefits-bg {
+  width: 70vw;
+  margin: 2vw 0vw 2vw 0vw;
+  display: inline-block;
+  background-color: rgb(240,240,240);
+}
+
+.product-benefit-area {
+  display: block;
+  padding: 2vw 2vw 2vw 0vw;
+  text-align: left;
+  height: 25vw;
+}
+.product-benefit-img {
+  display: inline-block;
+  width: 25vw;
+  height: 25vw;
+  margin: 0vw;
+  padding: 0vw;
+}
+.products-benefits {
+  display: inline-block;
+  width: 42vw;
+  padding-bottom: 5vw;
+  text-align: right;
+  font-weight: bold;
+  float: right;
+}
+.benefits-text {
+  font-family: "Segoe UI";
+  display: inline-block;
+  margin: 0vw;
+  padding: 0vw;
+  color: rgb(70,70,70);
+}
+
+/* setting the properties of the footer area at the bottom of the page */
+#footer-area {
+  height: 10vw;
+  background-color: #FED158;
+  display: block;
+}
+
+/* setting the properties of the footer headers */
+.footer-heading {
+  margin: 2vw 0vw 0vw 0vw;
+  color: #805D01;
+  font-family: "Segoe UI";
+  font-weight: bold;
+  font-size: 2vw;
+}
+/* setting the properties of the footer paragraphs */
+.footer-info {
+  font-family: arial;
+  font-size: 1vw;
+  width: 20vw;
+  height: 1.5vw;
+  font-weight: bold;
+  margin: 0.5vw 0vw 0vw 0vw;
+  color: rgb(148, 108, 0, 58%);
+  background-color: rgb(0, 0, 0, 0%);
+  transition: all 0.2s ease-in;
+}
+/* setting the properties of language paragraphs at the footer of the page */
+.hover:hover {
+  cursor: pointer;
+  color: rgb(148, 108, 0, 100%);
+}
+/* setting the properties of the footer contact info paragraphs */
+.space {
+  margin: 0vw;
+}
