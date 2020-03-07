@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Qetaf Shop</title>
+    <link rel="stylesheet" href="ShopPage.css">
+
+    <!-- Required meta tags -->
+    <!-- <meta charset="utf-8"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+
+  </head>
+  <body>
+    <div id="header">
+        <div class="header-item" style="margin-top:0.5vw;margin-bottom:0px;height:3vw;width:12vw;" onclick="AccessMainPage();">
+        <img style="width:100%; height:100%;display: block;" src="pics/Qetaf-word.png">
+      </div>
+      <div class="header-item" onclick="AccessMainPage();">
+        <p>الصفحة الرئيسية</p>
+      </div>
+      <div class="header-item" onclick="AccessTheShop();">
+        <p>المتجر</p>
+      </div>
+    </div>
+    
+    <div id="cart-side">
+      <div id="cart-side-header"><p>العربة</p></div>
+      <ul id="cart-items-list">
+        <li id="side-total">
+          <p class="side-total-label text">:الإجمالي</p>
+          <p class="side-total-price text">0.00 EGY</p>
+          <p class="side-buy text" onclick="checkCookie ();">اشتر الآن</p>
+          <div class="side-separator"></div>
+        </li>
+      </ul>
+    </div>
+    <div id="cart-handle">
+      <div id="cart-icon" onclick="enableItemView ();">
+        <img src="pics/cart.png">
+      </div>
+    </div>
+
+    <div style="display:block; height: 5vw; width: 100%;">
+    </div>
+    <div id="filter-area">
+      <div>
+        <p class="headings">الصنف</p>
+        <div class="check-boxes-area">
+          <div>
+            <span class="labels">عسل</span>
+            <input type="checkbox" name="honey" class="check-box" onclick="HoneyCheckBox (this)" checked>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="products">
+    </div>
+
+    <div class="dark-area" onclick="disableQuickView ();"></div>
+    <div class="quick-view-window">
+      <img src="pics/back.png" onclick="disableQuickView ();" style="width:3vw; height:3vw;display:block;margin:0vw;">
+      <img src="" class="product-image-quick-view">
+      <p class="product-name-quick-view">product name</p>
+      <p class="product-discription">There supposed to be a discription in this exact area so this text is just for testing the area's coordinates</p>
+      <p class="product-price-quick-view"></p>
+      <input type="number" class="quantity" min="1" max="12" step="1" value="1">
+      <p class="product-name-quick-view" style="float:left; margin:3.5vw 20vw 0vw 1vw; font-size:2vw;">:الكمية</p>
+      <input type="button" value="اضف الي العربة" class="add-to-the-cart" onclick='AddItemToCart (this.getAttribute("productID"));'>
+    </div>
+
+    <!-- <div id="cart">
+      <div id="cart-icon" onclick="enableItemView ();">
+        <img src="pics/cart.png">
+      </div>
+      <div id="cart-items">
+        <p id="sum-label">:الإجمالي</p>
+        <p id="sum">5000 EGY</p>
+        <p id="buy-now" onclick="checkCookie ();">اشتر الآن</p>
+      </div>
+    </div> -->
+
+    <div id="sign-up-window">
+      <p class="sign-up-header">تسجيل الدخول</p>
+      <p class="sign-up-label">الاسم</p>
+      <input class="field" id="name" type="text">
+      <p class="sign-up-label">العنوان</p>
+      <input class="field" id="address" type="text">
+      <p class="sign-up-label">رقم الهاتف</p>
+      <input class="field" id="phone" type="number">
+
+      <button id="sign-up-button" onclick="signUpWindow ();">تسجيل</button>
+    </div>
+
+    <div id="thank-you-window"><p>شكرا لك علي التسجيل في قطاف</p></div>
+
+    <div id="footer-area">
+      <div style="display:inline-block;padding-left: 20vw;height: 10vw;width: 20vw;">
+        <p class="footer-heading">ادارة بياناتي</p>
+        <p class="footer-info hover" onclick="DeleteData();">-> مسح بياناتي</p>
+        <p class="footer-info hover" onclick="ReEnterData();">-> إعادة إدخال بياناتي</p>
+      </div>
+      <div style="display:inline-block;padding-left: 20vw;height: 10vw;width: 20vw;">
+        <p class="footer-heading" style="margin: 0.5vw 0vw 1vw 0vw;">:تواصلوا معنا عبر</p>
+        <p class="footer-info space">-> +0201156665661</p>
+        <p class="footer-info space">-> Gamoham5@gmail.com</p>
+        <p class="footer-info space">-> Gamoham@yahoo.com</p>
+      </div>
+    </div>
+
+    <script src="ShopPage.js"></script>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+  </body>
+</html>
