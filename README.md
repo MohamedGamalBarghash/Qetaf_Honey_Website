@@ -1,5 +1,5 @@
 # QETAF HONEY WEBSITE
-This is a project I made for a request of Gamal Barghush to create a honey marketplace website for his honey selling business.
+This is a project I made as a request of Gamal Barghush to create a honey marketplace website for his honey selling business.
 
 # CONTENTS:
 - Main Page: 
