@@ -34,4 +34,5 @@ And there is a shopping cart to the left which you can click to access your cart
 - `Photoshop` for making and editing the pictures in the website.
 
 # AUTHORS:
-- Mohamed Gamal Barghush.
+- Mohamed Gamal Barghush. (Developer)
+- Osama Gamal. (Photographer)
