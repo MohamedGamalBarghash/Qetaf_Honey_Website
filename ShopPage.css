@@ -16,7 +16,7 @@ button:focus {
 body::-webkit-scrollbar {
   width: 0.25vw;
 }
-
+/* change the color of the scrollbar track */
 body::-webkit-scrollbar-track {
   background-color: rgb(50,50,50);
 }
