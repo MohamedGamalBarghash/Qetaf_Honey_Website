@@ -12,7 +12,7 @@ input:focus {
 button:focus {
   outline: 0vw;
 }
-
+/* change the size of the scrollbar on the page */
 body::-webkit-scrollbar {
   width: 0.25vw;
 }
